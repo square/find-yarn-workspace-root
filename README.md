@@ -20,3 +20,5 @@ const workspaceRoot = findWorkspaceRoot(__dirname); // Absolute path or null
 ```
 yarn test
 ```
+
+Copyright 2017 Square, Inc.
