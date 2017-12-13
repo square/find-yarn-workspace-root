@@ -4,7 +4,7 @@
   "description": "Algorithm for finding the root of a yarn workspace, extracted from yarnpkg.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thetimothyp/find-yarn-workspace-root.git"
+    "url": "https://github.com/square/find-yarn-workspace-root.git"
   },
   "main": "index.js",
   "author": "Square, Inc.",
