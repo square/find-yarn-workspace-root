@@ -13,8 +13,7 @@ script:
 deploy:
   provider: npm
   email: npmjs@squareup.com
-  api_key:
-    secure: U7QtLxRkTx4wuEInBGFcFZO76fx1WzJMAp0Yw+/HMyMnGMbi4+MwMRSMrGY5pXkGuRoFuGrKYhAVO1HciCGjNRVTzB5kImia/uQgQYVsZV3NAw7cq7k7R6HXfVZ8kKTDci4CCqLdT1EKwYBjhQO3ZbcQuIUCMSck7OqVK0MH1anM7aoZRXEZf8ww4+Y17CIRKSD1uncWr+VbAQ4LJs1q5ou64QW568JXaLm5Iw51UQXXS8SVlCdvy5NYu+KOgKAtZnksCTDGJrVp1V9gECrnuM/FhOaxcSWUrDC3WxiGqUzIIZMrZS3xT5qKTA9EMih0963S4eJRUYLWIaLrRouVaxQmPry2pwtEcubGTju+/2L0qf7e0J3vNmxDfja/9qh5Og1mJ/aA5PdDby/yAton51OwnXDaG46suYE9W+JbLJdyc6WyCykgWXzPtg5vzXNrWQCk36CtqLQcxPlOPj6bMssVcIDrM91GA8WPCJ6BiHQ5SeKjAdH0sexj1OCLPmGaE05Kh0VB6YZ2UIYu/y1s91xQYzSpaROG0HyZK+45nYqElcEjR2ljqTQPAe/sIMIvSGoDgooQh/AxuhE44dn17S4/cbQCdd4x90vsEDuAvgeOEUhnVandGnRi5BWoxenF4/MoeITR8GRi/45VZE19Eu79NV5Xb7npxyea37PWEfc=
+  api_key: $NPM_TOKEN
   on:
     repo: square/find-yarn-workspace-root
     branch: master
