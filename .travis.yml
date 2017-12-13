@@ -9,3 +9,11 @@ cache: yarn
 
 script:
   - yarn test
+
+deploy:
+  provider: npm
+  email: npmjs@squareup.com
+  api_key:
+    secure: Y+5aQcwu116/0/HwQAwDisjR5UILmjQMaAPJI7yNM6x5jz1nj9cO6WXda5FMTLDTFxa0sAO0BQaAmRSqFRECsB1EQitgIO/wFrT//zNK81cyK4PV4IkNANQfkKPucCJ/S2IwoWAdQORiHvgRt/C+sSX36++bdLWrHl0OJSfss2WOkXlHdi3JLXSEl3KJ+6jpPX0AsMOwJb+epX1asJdzirAg1jcrXLKmh615IbOnK4ODAXa4QR65rDiwp/YADYcQfzh4pHLaDVi27/Dm4BRz1kE2pHNY5MBjSFCAuqJtUKI5Cz4ADhLaylGFkVof1iJnSMibXSRKCwm1rkB11fcCqZyc2Og83+k9EtKrEvRj2QCQfnQlUXg04/TcJuRVMh04GpoCbxNQQiSS+zYxVKNGXEpvnZvViyoLwkQ+m+mxeybeTjYS4/7mAX9Cb3e52xM1Krv0InsTljAsPeCbjr1+COoUbX+v634WQrA3Pqvsih844i2DpmhSFejZFn8O/+5RX9p2LsqAN8YbOFM8+humClApWuFGhJSJNTEnBDCgQnP+phsj5kW6PVcQs8vtRIr+OTRIMgOY2X5JnoPwfk9HxvLZQYrzPIgw6ndNR6AeJlK6twJBCxJxFkuCeQJ//bjmixdI8ZLIgMY2DnbPXbaA028/yjpYPVkFVsk2Mhbbcec=
+  on:
+    branch: master
