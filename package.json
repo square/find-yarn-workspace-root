@@ -12,6 +12,7 @@
   "scripts": {
     "test": "mocha tests/**/*-test.js"
   },
+  "files": [],
   "dependencies": {
     "fs-extra": "^4.0.3",
     "micromatch": "^3.1.4"
