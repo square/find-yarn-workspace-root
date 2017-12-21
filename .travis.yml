@@ -10,10 +10,14 @@ cache: yarn
 script:
   - yarn test
 
-deploy:
-  provider: npm
-  email: npmjs@squareup.com
-  api_key: $NPM_TOKEN
-  on:
-    repo: square/find-yarn-workspace-root
-    branch: master
+jobs:
+  include:
+    - stage: npm release
+      node_js: "9"
+      deploy:
+        provider: npm
+        email: npmjs@squareup.com
+        api_key: $NPM_TOKEN
+        on:
+          repo: square/find-yarn-workspace-root
+          branch: master
