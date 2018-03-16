@@ -18,9 +18,11 @@ function findWorkspaceRoot(initial) {
 
   do {
     const manifest = readPackageJSON(current);
+
     if (manifest && manifest.workspaces) {
+      const workspaces = manifest.workspaces.packages || manifest.workspaces
       const relativePath = path.relative(current, initial);
-      if (relativePath === '' || micromatch([relativePath], manifest.workspaces).length > 0) {
+      if (relativePath === '' || micromatch([relativePath], workspaces).length > 0) {
         return current;
       } else {
         return null;
