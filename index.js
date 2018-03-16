@@ -18,9 +18,9 @@ function findWorkspaceRoot(initial) {
 
   do {
     const manifest = readPackageJSON(current);
+    const workspaces = extractWorkspaces(manifest);
 
-    if (manifest && manifest.workspaces) {
-      const workspaces = manifest.workspaces.packages || manifest.workspaces
+    if (workspaces) {
       const relativePath = path.relative(current, initial);
       if (relativePath === '' || micromatch([relativePath], workspaces).length > 0) {
         return current;
@@ -34,6 +34,11 @@ function findWorkspaceRoot(initial) {
   } while (current !== previous);
 
   return null;
+}
+
+function extractWorkspaces(manifest) {
+  const { workspaces } = manifest || {};
+  return (workspaces && workspaces.packages) || (workspaces instanceof Array ? workspaces : null);
 }
 
 function readPackageJSON(dir) {

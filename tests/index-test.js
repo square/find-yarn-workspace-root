@@ -43,6 +43,21 @@ describe('findWorkspaceRoot', function() {
       baseDir: path.join(fixtureDirectory, 'yarn-workspace-no-lockfile'),
       expectedResult: path.join(fixtureDirectory, 'yarn-workspace-no-lockfile'),
     },
+    {
+      description: 'yarn workspace root - object config format',
+      baseDir: path.join(fixtureDirectory, 'yarn-workspace-object-config'),
+      expectedResult: path.join(fixtureDirectory, 'yarn-workspace-object-config'),
+    },
+    {
+      description: 'package-a in yarn workspace root - object config format',
+      baseDir: path.join(fixtureDirectory, 'yarn-workspace-object-config', 'package-a'),
+      expectedResult: path.join(fixtureDirectory, 'yarn-workspace-object-config'),
+    },
+    {
+      description: 'package not listed in yarn workspace root - object config format',
+      baseDir: path.join(fixtureDirectory, 'yarn-workspace-object-config-no-packages', 'package-a'),
+      expectedResult: null,
+    },
   ];
 
   for (let i = 0; i < tests.length; i++) {
