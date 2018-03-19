@@ -38,7 +38,7 @@ function findWorkspaceRoot(initial) {
 
 function extractWorkspaces(manifest) {
   const workspaces = (manifest || {}).workspaces;
-  return (workspaces && workspaces.packages) || (workspaces instanceof Array ? workspaces : null);
+  return (workspaces && workspaces.packages) || (Array.isArray(workspaces) ? workspaces : null);
 }
 
 function readPackageJSON(dir) {
