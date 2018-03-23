@@ -2,4 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/square/find-yarn-workspace-root/compare/v1.0.0...v1.1.0) (2018-03-23)
 
+
+### Features
+
+* allow new `manifest.workspaces.packages` format ([5521d97](https://github.com/square/find-yarn-workspace-root/commit/5521d97))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
