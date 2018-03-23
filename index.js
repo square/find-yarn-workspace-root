@@ -18,9 +18,11 @@ function findWorkspaceRoot(initial) {
 
   do {
     const manifest = readPackageJSON(current);
-    if (manifest && manifest.workspaces) {
+    const workspaces = extractWorkspaces(manifest);
+
+    if (workspaces) {
       const relativePath = path.relative(current, initial);
-      if (relativePath === '' || micromatch([relativePath], manifest.workspaces).length > 0) {
+      if (relativePath === '' || micromatch([relativePath], workspaces).length > 0) {
         return current;
       } else {
         return null;
@@ -32,6 +34,11 @@ function findWorkspaceRoot(initial) {
   } while (current !== previous);
 
   return null;
+}
+
+function extractWorkspaces(manifest) {
+  const workspaces = (manifest || {}).workspaces;
+  return (workspaces && workspaces.packages) || (Array.isArray(workspaces) ? workspaces : null);
 }
 
 function readPackageJSON(dir) {
