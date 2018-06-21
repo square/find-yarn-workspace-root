@@ -1,6 +1,7 @@
 'use strict';
 
 const expect = require('chai').expect;
+const cp = require('child_process');
 const path = require('path');
 const findWorkspaceRoot = require('../index');
 
@@ -69,4 +70,15 @@ describe('findWorkspaceRoot', function() {
       expect(findWorkspaceRoot(baseDir)).to.equal(expectedResult);
     });
   }
+
+  it('uses process.cwd() as a default path', function() {
+    const dummyBinPath = require.resolve('./fixtures/bin/cwd-find-root');
+    const workspaceRoot = path.join(fixtureDirectory, 'yarn-workspace-default-path');
+    const execOptions = {
+      cwd: path.join(workspaceRoot, 'package-a'),
+      encoding: 'utf8'
+    };
+    const result = cp.execFileSync(process.execPath, [dummyBinPath], execOptions);
+    expect(result).to.equal(workspaceRoot);
+  });
 });

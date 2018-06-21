@@ -9,10 +9,13 @@ module.exports = findWorkspaceRoot;
 /**
  * Adapted from:
  * https://github.com/yarnpkg/yarn/blob/ddf2f9ade211195372236c2f39a75b00fa18d4de/src/config.js#L612
- * @param {string} initial
+ * @param {string} [initial]
  * @return {string|null}
  */
 function findWorkspaceRoot(initial) {
+  if (!initial) {
+    initial = process.cwd();
+  }
   let previous = null;
   let current = path.normalize(initial);
 
