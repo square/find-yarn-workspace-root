@@ -13,12 +13,10 @@ script:
 jobs:
   include:
     - stage: npm release
-      node_js: "9"
-      script: echo "Deploying to npm…"
+      node_js: lts/*
       deploy:
-        provider: npm
-        email: npmjs@squareup.com
-        api_key: $NPM_TOKEN
+        provider: script
+        skip_cleanup: true
+        script: "echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' >> .npmrc && npm publish"
         on:
-          repo: square/find-yarn-workspace-root
           branch: master
