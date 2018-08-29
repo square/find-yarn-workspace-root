@@ -7,13 +7,16 @@
     "url": "https://github.com/square/find-yarn-workspace-root.git"
   },
   "main": "index.js",
+  "types": "index.d.ts",
   "author": "Square, Inc.",
   "license": "Apache-2.0",
   "scripts": {
     "test": "mocha tests/**/*-test.js",
     "commitmsg": "commitlint -e $GIT_PARAMS"
   },
-  "files": [],
+  "files": [
+    "index.d.ts"
+  ],
   "dependencies": {
     "fs-extra": "^4.0.3",
     "micromatch": "^3.1.4"
