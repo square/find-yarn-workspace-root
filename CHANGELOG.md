@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/square/find-yarn-workspace-root/compare/v1.2.0...v1.2.1) (2018-08-30)
+
+
+### Bug Fixes
+
+* add typescript declaration ([7c9c96f](https://github.com/square/find-yarn-workspace-root/commit/7c9c96f))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/square/find-yarn-workspace-root/compare/v1.0.0...v1.2.0) (2018-08-09)
 

@@ -1,6 +1,6 @@
 {
   "name": "find-yarn-workspace-root",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Algorithm for finding the root of a yarn workspace, extracted from yarnpkg.com",
   "repository": {
     "type": "git",
