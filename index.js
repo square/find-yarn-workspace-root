@@ -1,6 +1,6 @@
 'use strict';
 
-const fs = require('fs-extra');
+const fs = require('fs');
 const micromatch = require('micromatch');
 const path = require('path');
 
@@ -46,8 +46,8 @@ function extractWorkspaces(manifest) {
 
 function readPackageJSON(dir) {
   const file = path.join(dir, 'package.json');
-  if (fs.pathExistsSync(file)) {
-    return fs.readJsonSync(file);
+  if (fs.existsSync(file)) {
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
   }
   return null;
 }
