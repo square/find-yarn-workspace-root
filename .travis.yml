@@ -7,6 +7,11 @@ node_js:
 
 cache: yarn
 
+install:
+  - npm install --global yarn@1.10.1
+  - yarn --version
+  - yarn install
+
 script:
   - yarn test
 
