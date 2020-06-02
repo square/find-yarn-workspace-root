@@ -21,7 +21,7 @@
     "micromatch": "^4.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^5.2.6",
+    "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^5.2.3",
     "chai": "^4.1.2",
     "husky": "^0.14.3",
