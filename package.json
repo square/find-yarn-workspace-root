@@ -23,12 +23,12 @@
     "micromatch": "^4.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^5.2.6",
-    "@commitlint/config-conventional": "^5.2.3",
-    "chai": "^4.1.2",
+    "@commitlint/cli": "^7",
+    "@commitlint/config-conventional": "^7",
+    "chai": "^4.2.0",
     "eslint": "^6.8.0",
-    "husky": "^0.14.3",
-    "mocha": "^4.0.1",
-    "standard-version": "^4.2.0"
+    "husky": "^3",
+    "mocha": "^7",
+    "standard-version": "^4"
   }
 }
