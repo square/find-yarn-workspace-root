@@ -1,9 +1,6 @@
 language: node_js
 node_js:
-  - "4"
-  - "6"
   - "8"
-  - "9"
   - "10"
   - "12"
   - "14"
@@ -11,8 +8,6 @@ node_js:
 cache: yarn
 
 install:
-  - npm install --global yarn@1.10.1
-  - yarn --version
   - yarn install
 
 script:
