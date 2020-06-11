@@ -1,6 +1,6 @@
 # find-yarn-workspace-root
 
-[![Build Status](https://travis-ci.org/square/find-yarn-workspace-root.svg?branch=master)](https://travis-ci.org/square/find-yarn-workspace-root)
+![CI](https://github.com/square/find-yarn-workspace-root/workflows/CI/badge.svg)
 
 Algorithm for finding the root of a yarn workspace, extracted from yarnpkg.com
 
@@ -40,13 +40,17 @@ Then create a branch for your bugfix/feature, make changes and update the tests,
 
 ## Releases
 
-Releases are handled by Travis CI once a build succeeds on `master`. To trigger a release, bump the version using `standard-version`:
+To trigger a release, bump the version using `standard-version`:
 
-```bash
-$(yarn bin)/standard-version
-```
+1. To update the CHANGELOG, bump the version in `package.json`, and create a git tag, run:
 
-That should update the CHANGELOG, bump the version in `package.json`, and create a git tag. Then, just `git push && git push --tags`.
+   ```bash
+   $(yarn bin)/standard-version
+   ```
+
+2. `git push && git push --tags`
+
+3. `npm publish`
 
 ---
 Copyright 2017 Square, Inc.
