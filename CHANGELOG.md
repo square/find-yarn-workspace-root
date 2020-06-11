@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/square/find-yarn-workspace-root/compare/v1.2.1...v2.0.0) (2020-06-11)
+
+
+### Chores
+
+* **deps:** update micromatch to v4 ([c7e8189](https://github.com/square/find-yarn-workspace-root/commit/c7e8189))
+
+
+### BREAKING CHANGES
+
+* **deps:** requires Node >= 8.6
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/square/find-yarn-workspace-root/compare/v1.2.0...v1.2.1) (2018-08-30)
 
