@@ -1,5 +1,6 @@
 # find-yarn-workspace-root
 
+[![npm version](https://badge.fury.io/js/find-yarn-workspace-root.svg)](https://badge.fury.io/js/find-yarn-workspace-root)
 ![CI](https://github.com/square/find-yarn-workspace-root/workflows/CI/badge.svg)
 
 Algorithm for finding the root of a yarn workspace, extracted from yarnpkg.com
