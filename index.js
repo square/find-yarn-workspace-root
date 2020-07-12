@@ -25,7 +25,7 @@ function findWorkspaceRoot(initial) {
 
     if (workspaces) {
       const relativePath = path.relative(current, initial);
-      if (relativePath === '' || micromatch([relativePath], workspaces).length > 0) {
+      if (relativePath === '' || micromatch([relativePath], workspaces, { nocase: true }).length > 0) {
         return current;
       } else {
         return null;
