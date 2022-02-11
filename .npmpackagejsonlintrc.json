@@ -1,6 +1,5 @@
 {
   "rules": {
-    "no-duplicate-properties": "error",
     "no-repeated-dependencies": "error",
     "prefer-alphabetical-bundledDependencies": "error",
     "prefer-alphabetical-dependencies": "error",
@@ -8,7 +7,6 @@
     "prefer-alphabetical-optionalDependencies": "error",
     "prefer-alphabetical-scripts": "error",
     "prefer-caret-version-dependencies": "error",
-    "prefer-caret-version-devDependencies": "error",
-    "prefer-scripts": ["error", ["lint", "test"]]
+    "prefer-caret-version-devDependencies": "error"
   }
 }
