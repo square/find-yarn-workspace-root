@@ -26,7 +26,8 @@
     "@commitlint/cli": "^7",
     "@commitlint/config-conventional": "^7",
     "chai": "^4.2.0",
-    "eslint": "^6.8.0",
+    "eslint": "^8",
+    "eslint-plugin-node": "^11",
     "husky": "^3",
     "mocha": "^7",
     "standard-version": "^4"
