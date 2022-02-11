@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
+    'plugin:node/recommended'
   ],
   env: {
     node: true
